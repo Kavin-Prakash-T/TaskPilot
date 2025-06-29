@@ -1,0 +1,122 @@
+.showtask {
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-weight: bolder;
+    padding: 5px;
+    padding-left: 45px;
+}
+
+.count {
+    font-weight: bolder;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: gray;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    font-size: larger;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.clearall {
+    background-color: rgb(252, 62, 62);
+    border-radius: 7px;
+    padding: 0px;
+    width: 70px;
+    font-size: small;
+}
+
+li {
+    display: flex;
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 370px;
+    justify-content: space-between;
+    border-right: 4px solid #786d6d;
+}
+
+ul {
+    margin: 30px 5px 20px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.showtask li:hover {
+    background-color: #f8f8f8;
+}
+
+.time {
+    font-size: small;
+    color: grey;
+}
+
+.icons i {
+    padding: 3px;
+    font-size: large;
+}
+
+.name {
+    display: block;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.icons .del {
+    color: red;
+    cursor: pointer;
+}
+
+.icons .edit {
+    color: rgb(69, 33, 199);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .clearall {
+        width: 70px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
